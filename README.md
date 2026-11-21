@@ -73,11 +73,12 @@ File created : text.txt
 - `Main` reads user input with `Scanner` and calls the matching method of `FileManager` inside a `switch` statement.
 - `FileManager` uses `File`, `FileWriter` and `Scanner` from the Java standard library and handles `IOException` / `FileNotFoundException` by printing an error message.
 
-## Notes and Limitations
+## Notes
 
-- Text is appended, not overwritten, and no newline is added automatically after each write.
-- Entering a non-numeric value in the menu will cause the program to crash.
-- Reading or writing a file that does not exist prints an error message (writing creates the file automatically).
+- Text is appended to the end of the file, each write on a new line.
+- If you press Enter without typing a file name, `text.txt` is used.
+- Invalid menu input shows a message instead of crashing.
+- Reading or deleting a file that does not exist shows a "File not found" message.
 
 ## Author
 [fatemehsdev](https://github.com/fatemehsdev)
